@@ -45,6 +45,11 @@ body, html {
     border-radius: 5px;
     align-items: center;
     width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.text-div-foto button:hover {
+    transform: scale(1.2);
 }
 
 .image-div-foto {
@@ -52,6 +57,17 @@ body, html {
     background: url('../images/foto.jpg') no-repeat center center/cover;
     position: relative;
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 30% 100%); /* Cambia l'angolo del poligono per tagliare dall'angolo inferiore sinistro a quello superiore destro */
+    z-index: 0;
+}
+
+.image-div-foto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(10, 29, 86, 0.466); /* Overlay color and opacity */
     z-index: 0;
 }
 
@@ -104,6 +120,11 @@ body, html {
     border-radius: 5px;
     align-items: center;
     width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.text-div-video button:hover {
+    transform: scale(1.2);
 }
 
 .image-div-video {
@@ -111,6 +132,17 @@ body, html {
     background: url('../images/video.jpg') no-repeat center center/cover;
     position: relative;
     clip-path: polygon(0% 0, 100% 0, 75% 100%, 0% 100%); /* Cambia l'angolo del poligono per tagliare dall'angolo inferiore sinistro a quello superiore destro */
+    z-index: 0;
+}
+
+.image-div-video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(10, 29, 86, 0.466); /* Overlay color and opacity */
     z-index: 0;
 }
 
@@ -163,6 +195,11 @@ body, html {
     border-radius: 5px;
     align-items: center;
     width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.text-div-ill button:hover {
+    transform: scale(1.2);
 }
 
 .image-div-ill {
@@ -170,6 +207,17 @@ body, html {
     background: url('../images/ill.jpg') no-repeat center center/cover;
     position: relative;
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 30% 100%); /* Cambia l'angolo del poligono per tagliare dall'angolo inferiore sinistro a quello superiore destro */
+    z-index: 0;
+}
+
+.image-div-ill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(10, 29, 86, 0.466); /* Overlay color and opacity */
     z-index: 0;
 }
 
@@ -222,6 +270,11 @@ body, html {
     border-radius: 5px;
     align-items: center;
     width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.text-div-arte button:hover {
+    transform: scale(1.2);
 }
 
 .image-div-arte {
@@ -229,5 +282,16 @@ body, html {
     background: url('../images/arte.jpg') no-repeat center center/cover;
     position: relative;
     clip-path: polygon(0% 0, 100% 0, 75% 100%, 0% 100%); /* Cambia l'angolo del poligono per tagliare dall'angolo inferiore sinistro a quello superiore destro */
+    z-index: 0;
+}
+
+.image-div-arte::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(10, 29, 86, 0.466); /* Overlay color and opacity */
     z-index: 0;
 }
