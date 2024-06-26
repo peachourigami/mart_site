@@ -585,10 +585,53 @@ footer p {
     margin-bottom: 10px;
 }
 
-
 .event {
     font-size: 18px; /* Dimensione del testo dell'evento */
     text-align: center;
     color: darkblue; /* Colore blu scuro */
     border-bottom: 2px solid darkblue; /* Linea sotto il testo dell'evento */
 }
+
+.container-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:#FAF3E0;
+  }
+  
+  .left-side {
+    width: 30%;
+    text-align: center;
+    color: darkblue; /* Colore blu scuro */
+    border-radius: 10px; 
+    background-color: #29be94;
+  }
+  
+  .right-side {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .icon img {
+    max-width: 80%;
+    max-height: 80%;
+  }
