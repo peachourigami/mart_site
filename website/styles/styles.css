@@ -105,17 +105,23 @@ main {
     margin: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
 
 .circle img {
     width: 50px;
     height: 50px;
+    transition: transform 0.3s ease;
 }
 
 .circle p {
     margin: 10px 0 0 0;
     font-size: 14px;
     color: #333;
+}
+
+.circle:hover {
+    transform: scale(1.2);
 }
 
 footer {
