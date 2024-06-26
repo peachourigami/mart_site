@@ -15,12 +15,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function openViewer() {
-    const viewer = document.getElementById('imageViewer');
-    viewer.style.display = 'block';
-}
+document.getElementById('open-foto-gallery-btn').addEventListener('click', function() {
+    const galleryId = this.getAttribute('data-gallery');
+    const galleryOverlay = document.getElementById(galleryId + '-overlay');
+    galleryOverlay.style.display = 'flex';
+});
 
-function closeViewer() {
-    const viewer = document.getElementById('imageViewer');
-    viewer.style.display = 'none';
+document.getElementById('open-video-gallery-btn').addEventListener('click', function() {
+    const galleryId = this.getAttribute('data-gallery');
+    const galleryOverlay = document.getElementById(galleryId + '-overlay');
+    galleryOverlay.style.display = 'flex';
+});
+
+document.getElementById('open-ill-gallery-btn').addEventListener('click', function() {
+    const galleryId = this.getAttribute('data-gallery');
+    const galleryOverlay = document.getElementById(galleryId + '-overlay');
+    galleryOverlay.style.display = 'flex';
+});
+
+document.getElementById('open-arte-gallery-btn').addEventListener('click', function() {
+    const galleryId = this.getAttribute('data-gallery');
+    const galleryOverlay = document.getElementById(galleryId + '-overlay');
+    galleryOverlay.style.display = 'flex';
+});
+
+document.querySelectorAll('.close-btn').forEach(closeBtn => {
+    closeBtn.addEventListener('click', function() {
+        this.closest('.gallery-overlay').style.display = 'none';
+    });
+});
+
+function showImage(src) {
+    document.getElementById('main-image').src = src;
+    let thumbnails = document.querySelectorAll('.thumbnail');
+    thumbnails.forEach(thumbnail => {
+        thumbnail.classList.remove('active');
+    });
+    document.querySelector(`.thumbnail[src="${src}"]`).classList.add('active');
 }
