@@ -1,0 +1,476 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+header {
+    background-color: #FAF3E0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav .nav-links li {
+    display: inline;
+}
+
+header nav .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+main {
+    background-color: #1A3B71   ;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Ensure the sections stack vertically */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Change height to viewport height */
+    display: flex;
+    align-items: flex-end; /* Align to the bottom */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Adjust positioning of the wave */
+.wave {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+    height: 290px; /* You may adjust this as needed */
+    border-radius: 50% 50% 0 0 / 100px 100px 0 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #A24A76;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.circle img {
+    width: 50px;
+    height: 50px;
+}
+
+.circle p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: #333;
+}
+
+footer {
+    background-color: #FAF3E0;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
+}
+
+.curtain {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially off-screen */
+    width: 100%;
+    height: 100%;
+    background-color: #FAF3E0; /* Same color as PC header */
+    z-index: 999; /* Ensure it appears above other content */
+    transition: left 0.3s ease; /* Smooth sliding animation */
+}
+
+.curtain-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #555;
+}
+
+.curtain.active {
+    left: 0; /* Slide in from the left when active */
+}
+
+.curtain .nav-links {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.curtain .nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links li img { 
+    background-color:#A24A76;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.curtain .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header nav .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #FAF3E0;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header nav .nav-links.active {
+        display: flex !important;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    main .wave-container .wave {
+        height: 100px;
+        border-radius: 50% 50% 0 0 / 60px 60px 0 0;
+    }
+
+    main .wave-container .circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    main .wave-container .circle img {
+        width: 35px;
+        height: 35px;
+    }
+
+    main .wave-container .circle p {
+        font-size: 12px;
+    }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+.curtain {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Initially off-screen */
+    width: 100%;
+    height: 100%;
+    background-color: #FAF3E0; /* Same color as PC header */
+    z-index: 999; /* Ensure it appears above other content */
+    transition: left 0.3s ease; /* Smooth sliding animation */
+}
+
+.curtain-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #555;
+}
+
+.curtain.active {
+    left: 0; /* Slide in from the left when active */
+}
+
+.curtain .nav-links {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.curtain .nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links li img { 
+    background-color:#A24A76;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.curtain .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.content {
+    padding: 40px 20px;
+    color: #fff;
+    height: auto;
+}
+
+.content.foto {
+    background-color: #1A3B71; /* Background color foto section */
+}
+
+.content.video {
+    background-color: #1A3B71; /* Background color video section */
+}
+
+.content .text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.content button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #1A3B71;
+    border-radius: 5px;
+}
+
+.section-text-image {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1A3B71;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.text-section, .image-section {
+    width: 48%;
+}
+
+.text-section {
+    color: #fff;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.clothing-gallery {
+    padding: 20px;
+    background-color: #FAF3E0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.gallery-item {
+    background-color: #46B9B0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #FAF3E0;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header nav .nav-links.active {
+        display: flex !important;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .content .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+
+    .content p {
+        font-size: 0.9em;
+    }
+
+    .content button {
+        padding: 8px 16px;
+    }
+
+    .section-text-image {
+        flex-direction: column;
+    }
+
+    .text-section, .image-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .gallery-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Sfondo scuro */
+    z-index: 999; /* Livello superiore */
+}
+
+.main-image {
+    max-width: 500px; /*larghezza massima */
+    margin: 50px auto; /* margine superiore*/
+    display: block;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    max-width: 100px; /* Larghezza massima delle immagini della galleria */
+    height: auto;
+}

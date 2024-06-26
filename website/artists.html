@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sezione Artisti</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo_blu.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="artists.html">Artisti</a></li>
+                    <li><a href="workshop.html">Workshop</a></li>
+                    <li><a href="events.html">Eventi</a></li>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+            <div class="curtain">
+                <div class="curtain-header">
+                    <span class="close-btn">&times;</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="artists.html">Artisti</a></li>
+                    <li><a href="workshop.html">Workshop</a></li>
+                    <li><a href="events.html">Eventi</a></li>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section class="content foto">
+                <div class="text">
+                    <h2>FOTO</h2>
+                    <p>All'interno di questa sezione troverai tutti i lavori fotografici degli artisti che hanno deciso di collaborare con Progetto Mart.</p>
+                    <button>Guarda la Gallery</button>
+                </div>
+            </section>
+            <section class="content video">
+                <div class="text">
+                    <h2>VIDEO</h2>
+                    <p>All'interno di questa sezione troverai tutti i lavori video degli artisti che hanno deciso di collaborare con Progetto Mart.</p>
+                    <button>Guarda la Gallery</button>
+                </div>
+            </section>
+            <section class="content musica">
+                <div class="text">
+                    <h2>MUSICA</h2>
+                    <p>All'interno di questa sezione troverai tutti i lavori musicali dei ragazzi che hanno deciso di collaborare con Progetto Mart.</p>
+                    <button onclick="openViewer()">Guarda la Gallery</button>
+
+                    <div id="imageViewer" class="modal">
+                        <img src="images/workshop_serigrafia.jpg" alt="Main Image" class="main-image">
+                        <div class="gallery">
+                            <img src="images/workshop_stampa3D.jpg" alt="Gallery Image 1">
+                            <img src="images/workshop_serigrafia.jpg" alt="Gallery Image 2">
+                            <img src="images/workshop_luminarie.jpg" alt="Gallery Image 3">
+                            <!-- Aggiungi altre immagini della galleria qui -->
+                        </div>
+                        <span class="close-btn" onclick="closeViewer()">&times;</span>
+                    </div>
+            </section>
+            <section class="content arte contemporanea">
+                <div class="text">
+                    <h2>ARTE CONTEMPORANEA</h2>
+                    <p>All'interno di questa sezione troverai tutti i lavori artistici dei ragazzi che hanno deciso di collaborare con Progetto Mart.</p>
+                    <button onclick="openViewer()">Guarda la Gallery</button>
+
+                    <div id="imageViewer" class="modal">
+                        <img src="images/workshop_serigrafia.jpg" alt="Main Image" class="main-image">
+                        <div class="gallery">
+                            <img src="images/workshop_stampa3D.jpg" alt="Gallery Image 1">
+                            <img src="images/workshop_serigrafia.jpg" alt="Gallery Image 2">
+                            <img src="images/workshop_luminarie.jpg" alt="Gallery Image 3">
+                            <!-- Aggiungi altre immagini della galleria qui -->
+                        </div>
+                        <span class="close-btn" onclick="closeViewer()">&times;</span>
+                    </div>
+            </section>
+        </main>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
