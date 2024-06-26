@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artisti</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/artisti.css">
 </head>
 <body>
     <div class="container">
@@ -42,55 +43,45 @@
             </div>
         </header>
         <main>
-            <section class="content foto">
-                <div class="text">
-                    <h2>FOTO</h2>
+            <div class="main-div-foto">
+                <div class="text-div-foto">
+                    <h1>FOTO</h1>
                     <p>All'interno di questa sezione troverai tutti i lavori fotografici degli artisti che hanno deciso di collaborare con Progetto Mart.</p>
                     <button>Guarda la Gallery</button>
                 </div>
-            </section>
-            <section class="content video">
-                <div class="text">
-                    <h2>VIDEO</h2>
+                <div class="image-div-foto"></div>
+            </div>
+
+            <div class="main-div-video">
+                <div class="image-div-video"></div>
+                <div class="text-div-video">
+                    <h1>VIDEO</h1>
                     <p>All'interno di questa sezione troverai tutti i lavori video degli artisti che hanno deciso di collaborare con Progetto Mart.</p>
                     <button>Guarda la Gallery</button>
-                </div>
-            </section>
-            <section class="content musica">
-                <div class="text">
-                    <h2>MUSICA</h2>
+                </div>               
+            </div>
+
+            <div class="main-div-ill">
+                <div class="text-div-ill">
+                    <h1>ILLUSTRAZIONI</h1>
                     <p>All'interno di questa sezione troverai tutti i lavori musicali dei ragazzi che hanno deciso di collaborare con Progetto Mart.</p>
-                    <button onclick="openViewer()">Guarda la Gallery</button>
-
-                    <div id="imageViewer" class="modal">
-                        <img src="images/workshop_serigrafia.jpg" alt="Main Image" class="main-image">
-                        <div class="gallery">
-                            <img src="images/workshop_stampa3D.jpg" alt="Gallery Image 1">
-                            <img src="images/workshop_serigrafia.jpg" alt="Gallery Image 2">
-                            <img src="images/workshop_luminarie.jpg" alt="Gallery Image 3">
-                            <!-- Aggiungi altre immagini della galleria qui -->
-                        </div>
-                        <span class="close-btn" onclick="closeViewer()">&times;</span>
-                    </div>
-            </section>
-            <section class="content arte contemporanea">
-                <div class="text">
-                    <h2>ARTE CONTEMPORANEA</h2>
+                    <button>Guarda la Gallery</button>
+                </div> 
+                <div class="image-div-ill"></div>              
+            </div>
+            
+            <div class="main-div-arte">
+                <div class="image-div-arte"></div>
+                <div class="text-div-arte">
+                    <h1>ARTE CONTEMPORANEA</h1>
                     <p>All'interno di questa sezione troverai tutti i lavori artistici dei ragazzi che hanno deciso di collaborare con Progetto Mart.</p>
-                    <button onclick="openViewer()">Guarda la Gallery</button>
-
-                    <div id="imageViewer" class="modal">
-                        <img src="images/workshop_serigrafia.jpg" alt="Main Image" class="main-image">
-                        <div class="gallery">
-                            <img src="images/workshop_stampa3D.jpg" alt="Gallery Image 1">
-                            <img src="images/workshop_serigrafia.jpg" alt="Gallery Image 2">
-                            <img src="images/workshop_luminarie.jpg" alt="Gallery Image 3">
-                            <!-- Aggiungi altre immagini della galleria qui -->
-                        </div>
-                        <span class="close-btn" onclick="closeViewer()">&times;</span>
-                    </div>
-            </section>
+                    <button>Guarda la Gallery</button>
+                </div>               
+            </div>
         </main>
+        <footer>
+            <p>&copy; NTA - Federica Ratano a.a. 2023/2024</p>
+        </footer>
     </div>
     <script src="scripts/script.js"></script>
 </body>

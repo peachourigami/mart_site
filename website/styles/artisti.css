@@ -1,0 +1,233 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.main-div-foto {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.text-div-foto {
+    flex: 1;
+    background: #1A3B71; /* Colore di sfondo */
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.text-div-foto h1 {
+    font-size: 3em;
+}
+
+.text-div-foto p {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.text-div-foto button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #1A3B71;
+    border-radius: 5px;
+    align-items: center;
+    width: 30%;
+}
+
+.image-div-foto {
+    flex: 1;
+    background: url('../images/foto.jpg') no-repeat center center/cover;
+    position: relative;
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 30% 100%); /* Cambia l'angolo del poligono per tagliare dall'angolo inferiore sinistro a quello superiore destro */
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .main-div-foto {
+        flex-direction:column-reverse;
+    }
+    .image-div-foto {
+        clip-path: none;
+        height: 50vh;
+    }
+}
+
+.main-div-video {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.text-div-video {
+    flex: 1;
+    background: #1A3B71; /* Colore di sfondo */
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.text-div-video h1 {
+    font-size: 3em;
+}
+
+.text-div-video p {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.text-div-video button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #1A3B71;
+    border-radius: 5px;
+    align-items: center;
+    width: 30%;
+}
+
+.image-div-video {
+    flex: 1;
+    background: url('../images/video.jpg') no-repeat center center/cover;
+    position: relative;
+    clip-path: polygon(0% 0, 100% 0, 75% 100%, 0% 100%); /* Cambia l'angolo del poligono per tagliare dall'angolo inferiore sinistro a quello superiore destro */
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .main-div-video {
+        flex-direction:column-reverse;
+    }
+    .image-div-video {
+        clip-path: none;
+        height: 50vh;
+    }
+}
+
+.main-div-ill {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.text-div-ill {
+    flex: 1;
+    background: #1A3B71; /* Colore di sfondo */
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.text-div-ill h1 {
+    font-size: 3em;
+}
+
+.text-div-ill p {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.text-div-ill button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #1A3B71;
+    border-radius: 5px;
+    align-items: center;
+    width: 30%;
+}
+
+.image-div-ill {
+    flex: 1;
+    background: url('../images/video.jpg') no-repeat center center/cover;
+    position: relative;
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 30% 100%); /* Cambia l'angolo del poligono per tagliare dall'angolo inferiore sinistro a quello superiore destro */
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .main-div-ill {
+        flex-direction:column-reverse;
+    }
+    .image-div-ill {
+        clip-path: none;
+        height: 50vh;
+    }
+}
+
+.main-div-arte {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.text-div-arte {
+    flex: 1;
+    background: #1A3B71; /* Colore di sfondo */
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.text-div-arte h1 {
+    font-size: 3em;
+}
+
+.text-div-arte p {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.text-div-arte button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #1A3B71;
+    border-radius: 5px;
+    align-items: center;
+    width: 30%;
+}
+
+.image-div-arte {
+    flex: 1;
+    background: url('../images/video.jpg') no-repeat center center/cover;
+    position: relative;
+    clip-path: polygon(0% 0, 100% 0, 75% 100%, 0% 100%); /* Cambia l'angolo del poligono per tagliare dall'angolo inferiore sinistro a quello superiore destro */
+    z-index: 0;
+}

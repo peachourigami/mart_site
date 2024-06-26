@@ -303,6 +303,9 @@ footer p {
 
 .content.foto {
     background-color: #1A3B71; /* Background color foto section */
+    width: 100%;
+    text-align: left; /* Center text for demonstration */
+    padding: 20px; /* Some padding for better appearance */
 }
 
 .content.video {
