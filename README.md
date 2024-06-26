@@ -25,11 +25,11 @@ Il progetto è organizzato in diverse pagine, ognuna dedicata a un aspetto speci
 
 1. **Clonare il repository**:
     ```bash
-    git clone https://github.com/tuo-username/progetto-mart-website.git
+    git clone https://github.com/peachourigami/mart_site.git
     ```
 2. **Navigare nella directory del progetto**:
     ```bash
-    cd progetto-mart-website
+    cd mart_site
     ```
 3. **Aprire il file `index.html` nel browser** per vedere il sito in azione.
 
@@ -54,8 +54,8 @@ Se desideri contribuire al progetto, per favore segui questi passaggi:
 
 ## Contatti
 
-Per qualsiasi domanda o informazione, puoi contattare il team di Progetto Mart all'indirizzo email: info@progettomart.it.
+Per qualsiasi domanda o informazione, puoi contattare il team di Progetto Mart all'indirizzo email: progettomart@gmail.com
 
 ## Licenza
 
-Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICENSE) per più dettagli.
+Questo progetto è distribuito sotto la licenza MIT.
