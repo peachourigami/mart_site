@@ -526,3 +526,48 @@ footer p {
     max-width: 100px; /* Larghezza massima delle immagini della galleria */
     height: auto;
 }
+
+
+.calendar {
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 400px; /* Imposta l'altezza della sezione */
+}
+
+.event-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.row1 {
+    background-color: #29be94; 
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.row2 {
+    background-color: #fef1cb;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.row3 {
+    background-color: #4292d3;
+    grid-column: 1;
+    grid-row: 1 / span 2; /* Occupa entrambe le righe a destra */
+}
+
+.date {
+    font-weight: bold;
+}
+
+.event {
+    text-align: right;
+}
