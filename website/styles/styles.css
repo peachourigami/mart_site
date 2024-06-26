@@ -10,10 +10,43 @@ body {
 }
 
 .index-body {
-    background-image: url('../images/sfondo_mart.jpg'); /* percorso dell'immagine */
     background-size: cover; /* adatta l'immagine alla dimensione del body */
     background-position: center; /* posiziona l'immagine al centro */
     background-repeat: no-repeat; /* impedisce la ripetizione dell'immagine */
+}
+
+.main-section {
+    width: 100%;
+    height: 100vh; /* Altezza del viewport */
+    background: url('../images/sfondo_mart.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    color: white; /* Colore del testo bianco per contrastare con l'immagine di sfondo */
+    text-align: center;
+}
+
+.main-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(10, 29, 86, 0.466); /* Overlay color and opacity */
+    z-index: 0;
+}
+
+.main-section h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.main-section p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
 }
 
 .container {
@@ -73,7 +106,7 @@ header nav .nav-links li a {
 }
 
 main {
-    background-color: #1A3B71   ;
+    background-color: #1A3B71;
     flex-grow: 1;
     display: flex;
     flex-direction: column; /* Ensure the sections stack vertically */
