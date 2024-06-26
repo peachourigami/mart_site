@@ -45,11 +45,15 @@ document.querySelectorAll('.close-btn').forEach(closeBtn => {
     });
 });
 
-function showImage(src) {
-    document.getElementById('main-image').src = src;
-    let thumbnails = document.querySelectorAll('.thumbnail');
-    thumbnails.forEach(thumbnail => {
-        thumbnail.classList.remove('active');
+document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+    thumbnail.addEventListener('click', function() {
+        const gallery = this.closest('.gallery-overlay');
+        const mainImage = gallery.querySelector('.main-image');
+        mainImage.src = this.getAttribute('data-src');
+
+        gallery.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.classList.remove('active');
+        });
+        this.classList.add('active');
     });
-    document.querySelector(`.thumbnail[src="${src}"]`).classList.add('active');
-}
+});
