@@ -167,7 +167,7 @@ body, html {
 
 .image-div-ill {
     flex: 1;
-    background: url('../images/video.jpg') no-repeat center center/cover;
+    background: url('../images/ill.jpg') no-repeat center center/cover;
     position: relative;
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 30% 100%); /* Cambia l'angolo del poligono per tagliare dall'angolo inferiore sinistro a quello superiore destro */
     z-index: 0;
@@ -226,7 +226,7 @@ body, html {
 
 .image-div-arte {
     flex: 1;
-    background: url('../images/video.jpg') no-repeat center center/cover;
+    background: url('../images/arte.jpg') no-repeat center center/cover;
     position: relative;
     clip-path: polygon(0% 0, 100% 0, 75% 100%, 0% 100%); /* Cambia l'angolo del poligono per tagliare dall'angolo inferiore sinistro a quello superiore destro */
     z-index: 0;

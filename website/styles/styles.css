@@ -1,9 +1,19 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.index-body {
+    background-image: url('../images/sfondo_mart.jpg'); /* percorso dell'immagine */
+    background-size: cover; /* adatta l'immagine alla dimensione del body */
+    background-position: center; /* posiziona l'immagine al centro */
+    background-repeat: no-repeat; /* impedisce la ripetizione dell'immagine */
 }
 
 .container {
