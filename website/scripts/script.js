@@ -57,3 +57,29 @@ document.querySelectorAll('.thumbnail').forEach(thumbnail => {
         this.classList.add('active');
     });
 });
+
+document.querySelectorAll('.thumbnail-video').forEach(thumbnail => {
+    thumbnail.addEventListener('click', function() {
+        const gallery = this.closest('.gallery-overlay');
+        const mainVideo = gallery.querySelector('.main-video');
+        const source = mainVideo.querySelector('source');
+        source.src = this.getAttribute('video-src');
+        mainVideo.load(); // Carica il nuovo video
+        gallery.querySelectorAll('.thumbnail-video').forEach(thumb => {
+            thumb.classList.remove('active');
+        });
+        this.classList.add('active');
+    });
+});
+
+document.querySelectorAll('.close-btn-video').forEach(closeBtn => {
+    closeBtn.addEventListener('click', function() {
+        const gallery = this.closest('.gallery-overlay');
+        const mainVideo = gallery.querySelector('.main-video');
+        if (mainVideo) {
+            mainVideo.pause(); // Ferma il video
+        }
+        gallery.style.display = 'none';
+    });
+});
+
