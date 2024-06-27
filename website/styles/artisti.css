@@ -387,3 +387,8 @@ body, html {
 .thumbnails-video img:hover, .thumbnails-video img.active {
     border: 2px solid #333;
 }
+
+.text-thumbnail {
+    font-size: 15px;
+    color: #000000;
+}
