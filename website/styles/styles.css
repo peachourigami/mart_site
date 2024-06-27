@@ -394,15 +394,15 @@ footer p {
     box-sizing: border-box;
 }
 
-.text-section, .image-section {
-    width: 48%;
-}
 
 .text-section {
     color: #fff;
+    padding: 10px;
+    width: 70%;
 }
 
 .image-section img {
+    padding: 10px;
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -481,11 +481,6 @@ footer p {
 
     .section-text-image {
         flex-direction: column;
-    }
-
-    .text-section, .image-section {
-        width: 100%;
-        padding: 10px;
     }
 
     .gallery-grid {
@@ -574,7 +569,7 @@ footer p {
 .date {
     color: darkblue; /* Colore blu scuro */
     font-weight: bold;
-    font-size: 36px; /* Dimensione del giorno */
+    font-size: 45px; /* Dimensione del giorno */
     margin-bottom: 5px;
 }
 
@@ -601,37 +596,47 @@ footer p {
   }
   
   .left-side {
-    width: 30%;
-    text-align: center;
+    width: 40%;
     color: darkblue; /* Colore blu scuro */
     border-radius: 10px; 
-    background-color: #29be94;
+    background-color: #2abbab;
+    padding: 20px;
   }
   
   .right-side {
-    width: 50%;
+    width: 40%;
     display: flex;
-    justify-content: flex-end;
   }
   
   .icon {
-    width: 40px;
-    height: 40px;
-    background-color: #ccc;
+    background-color: #905871;
     border-radius: 50%;
+    width: 65px;
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .icon-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
   }
   
   .icon img {
     max-width: 80%;
     max-height: 80%;
   }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.text-contact {
+    font-size: 16px;
+    color: #905871;
+}
