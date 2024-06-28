@@ -9,16 +9,11 @@ body {
     min-height: 100vh;
 }
 
-.index-body {
-    background-size: cover; /* adatta l'immagine alla dimensione del body */
-    background-position: center; /* posiziona l'immagine al centro */
-    background-repeat: no-repeat; /* impedisce la ripetizione dell'immagine */
-}
 
 .main-section {
     width: 100%;
     height: 100vh; /* Altezza del viewport */
-    background: url('../images/sfondo_mart.jpg') no-repeat center center/cover;
+    background:#1A3B71;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,16 +23,6 @@ body {
     text-align: center;
 }
 
-.main-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200%;
-    height: 100%;
-    background: rgba(10, 29, 86, 0.466); /* Overlay color and opacity */
-    z-index: 0;
-}
 
 .main-section h1 {
     font-size: 3em;
@@ -639,4 +624,24 @@ footer p {
 .text-contact {
     font-size: 16px;
     color: #905871;
+}
+
+#spinningImage {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    padding: 100px;
+    transition: transform 4s linear;
+}
+
+.spin {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
