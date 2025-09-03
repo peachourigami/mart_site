@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo_blu.png" type="image/png">
+    <title>Artisti</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/artisti.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo_blu.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="artists.html">Artisti</a></li>
+                    <li><a href="workshop.html">Workshop</a></li>
+                    <li><a href="events.html">Eventi</a></li>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+            <div class="curtain">
+                <div class="curtain-header">
+                    <span class="close-btn">&times;</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="artists.html">Artisti</a></li>
+                    <li><a href="workshop.html">Workshop</a></li>
+                    <li><a href="events.html">Eventi</a></li>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="main-div-foto">
+                <div class="text-div-foto">
+                    <h1>FOTO</h1>
+                    <p>All'interno di questa sezione troverai tutti i lavori fotografici degli artisti che hanno deciso di collaborare con Progetto Mart.</p>
+                    <button id="open-foto-gallery-btn" data-gallery="gallery1">Guarda la Gallery</button>
+                </div>
+                <div class="image-div-foto"></div>
+            </div>
+            
+            <div id="gallery1-overlay" class="gallery-overlay">
+                <div class="gallery-content">
+                    <span id="close-btn" class="close-btn">&times;</span>
+                    <div class="main-image-container">
+                        <img class="main-image" src="images/9.jpg" alt="Main Image">
+                    </div>
+                    <span class="text-thumbnail">Descrizione</span>
+                    <div class="thumbnails">
+                        <img src="images/9.jpg" alt="Thumbnail 1" class="thumbnail" data-src="images/9.jpg">
+                        <img src="images/10.jpg" alt="Thumbnail 2" class="thumbnail" data-src="images/10.jpg">
+                        <img src="images/11.jpg" alt="Thumbnail 3" class="thumbnail" data-src="images/11.jpg">
+                        <img src="images/12.jpg" alt="Thumbnail 4" class="thumbnail" data-src="images/12.jpg">
+                        <img src="images/13.jpg" alt="Thumbnail 5" class="thumbnail" data-src="images/13.jpg">
+                        <img src="images/14.jpg" alt="Thumbnail 6" class="thumbnail" data-src="images/14.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-div-video">
+                <div class="image-div-video"></div>
+                <div class="text-div-video">
+                    <h1>VIDEO</h1>
+                    <p>All'interno di questa sezione troverai tutti i lavori video degli artisti che hanno deciso di collaborare con Progetto Mart.</p>
+                    <button id="open-video-gallery-btn" data-gallery="gallery2">Guarda la Gallery</button>
+                </div>            
+            </div>
+
+            <div id="gallery2-overlay" class="gallery-overlay">
+                <div class="gallery-content">
+                    <span id="close-btn-video" class="close-btn-video">&times;</span>
+                    <div class="main-video-container">
+                        <video controls class="main-video">
+                            <source src="video/Loneliness.mp4" type="video/mp4">
+                            Il tuo browser non supporta il tag video.
+                        </video>
+                    </div>
+                    <span class="text-thumbnail">Descrizione</span>
+                    <div class="thumbnails-video">
+                        <img src="video/Loneliness.jpg" video-src = "video/Loneliness.mp4" alt="Thumbnail 7" class="thumbnail-video">
+                        <img src="video/Anima.jpg" video-src = "video/Anima.mp4" alt="Thumbnail 8" class="thumbnail-video" >
+                        <img src="video/Conosci.jpg" video-src = "video/Conosci.mp4" alt="Thumbnail 9" class="thumbnail-video">
+                        <img src="video/Silenzio.jpg" video-src = "video/Silenzio.mp4" alt="Thumbnail 10" class="thumbnail-video">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-div-ill">
+                <div class="text-div-ill">
+                    <h1>ILLUSTRAZIONI</h1>
+                    <p>All'interno di questa sezione troverai tutti i disegni e le illustrazioni dei ragazzi che hanno deciso di collaborare con Progetto Mart.</p>
+                    <button id="open-ill-gallery-btn" data-gallery="gallery3">Guarda la Gallery</button>
+                </div> 
+                <div class="image-div-ill"></div>              
+            </div>
+
+            <div id="gallery3-overlay" class="gallery-overlay">
+                <div class="gallery-content">
+                    <span id="close-btn" class="close-btn">&times;</span>
+                    <div class="main-image-container">
+                        <img class="main-image" src="images/15.jpg" alt="Main Image">
+                    </div>
+                    <span class="text-thumbnail">Descrizione</span>
+                    <div class="thumbnails">
+                        <img src="images/15.jpg" alt="Thumbnail 7" class="thumbnail" data-src="images/15.jpg">
+                        <img src="images/16.jpg" alt="Thumbnail 8" class="thumbnail" data-src="images/16.jpg">
+                        <img src="images/17.jpg" alt="Thumbnail 9" class="thumbnail" data-src="images/17.jpg">
+                        <img src="images/18.jpg" alt="Thumbnail 10" class="thumbnail" data-src="images/18.jpg">
+                        <img src="images/19.jpg" alt="Thumbnail 11" class="thumbnail" data-src="images/19.jpg">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-div-arte">
+                <div class="image-div-arte"></div>
+                <div class="text-div-arte">
+                    <h1>ARTE CONTEMPORANEA</h1>
+                    <p>All'interno di questa sezione troverai tutti i lavori artistici dei ragazzi che hanno deciso di collaborare con Progetto Mart.</p>
+                    <button id="open-arte-gallery-btn" data-gallery="gallery4">Guarda la Gallery</button>
+                </div>               
+            </div>
+
+            <div id="gallery4-overlay" class="gallery-overlay">
+                <div class="gallery-content">
+                    <span id="close-btn" class="close-btn">&times;</span>
+                    <div class="main-image-container">
+                        <img class="main-image" src="images/2.jpg" alt="Main Image">
+                    </div>
+                    <span class="text-thumbnail">Descrizione</span>
+                    <div class="thumbnails">
+                        <img src="images/2.jpg" alt="Thumbnail 2" class="thumbnail" data-src="images/2.jpg">
+                        <img src="images/3.jpg" alt="Thumbnail 1" class="thumbnail" data-src="images/3.jpg">
+                        <img src="images/4.jpg" alt="Thumbnail 2" class="thumbnail" data-src="images/4.jpg">
+                        <img src="images/5.jpg" alt="Thumbnail 1" class="thumbnail" data-src="images/5.jpg">
+                        <img src="images/6.jpg" alt="Thumbnail 2" class="thumbnail" data-src="images/6.jpg">
+                        <img src="images/7.jpg" alt="Thumbnail 1" class="thumbnail" data-src="images/7.jpg">
+                        <img src="images/8.jpg" alt="Thumbnail 2" class="thumbnail" data-src="images/8.jpg">
+                        <img src="images/arte.jpg" alt="Thumbnail 1" class="thumbnail" data-src="images/arte.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <p>&copy; NTA - Federica Ratano a.a. 2023/2024</p>
+        </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
